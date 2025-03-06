@@ -17,35 +17,30 @@ namespace WebApplication1.Repositories
 
         public async Task<List<User>> GetAllUsersAsync()
         {
-            return await _appDbContext.Users.ToListAsync();
+            return await _appDbContext.Users.AsNoTracking().ToListAsync();
         }
 
-        public async Task<User> GetUserByIdAsync(int id)
+        public async Task<User?> GetUserByIdAsync(int id)
         {
-            return await _appDbContext.Users.FindAsync(id);
-
+            return await _appDbContext.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id);
         }
 
-        public async Task<User> CreateUserAsync (User user)
+        public async Task<User> CreateUserAsync(User user)
         {
-            await _appDbContext.AddAsync(user);
+            if (user == null) throw new ArgumentNullException(nameof(user));
+
+            await _appDbContext.Users.AddAsync(user);
             await _appDbContext.SaveChangesAsync();
             return user;
         }
 
 
         public async Task<bool> UpdateUserAsync(User user)
-
         {
             var existingUser = await _appDbContext.Users.FindAsync(user.Id);
             if (existingUser == null) return false;
 
-            existingUser.FirstName = user.FirstName;
-            existingUser.LastName = user.LastName;
-            existingUser.PhoneNumber = user.PhoneNumber;
-            existingUser.Email = user.Email;
-            existingUser.Role = user.Role;
-
+            _appDbContext.Entry(existingUser).CurrentValues.SetValues(user);
             await _appDbContext.SaveChangesAsync();
             return true;
         }
