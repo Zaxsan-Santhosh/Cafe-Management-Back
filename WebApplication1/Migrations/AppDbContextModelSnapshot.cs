@@ -42,6 +42,43 @@ namespace WebApplication1.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("WebApplication1.Entities.Discount", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Percentage")
+                        .HasColumnType("float");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId")
+                        .IsUnique();
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Discount");
+                });
+
             modelBuilder.Entity("WebApplication1.Entities.Employee", b =>
                 {
                     b.Property<int>("Id")
@@ -123,8 +160,7 @@ namespace WebApplication1.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId")
-                        .IsUnique();
+                    b.HasIndex("ProductId");
 
                     b.ToTable("Inventories");
                 });
@@ -237,12 +273,8 @@ namespace WebApplication1.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("Discount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Iamge")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("DiscountId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -275,11 +307,13 @@ namespace WebApplication1.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -295,6 +329,21 @@ namespace WebApplication1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("WebApplication1.Entities.Discount", b =>
+                {
+                    b.HasOne("WebApplication1.Entities.Product", "Product")
+                        .WithOne("Discount")
+                        .HasForeignKey("WebApplication1.Entities.Discount", "ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApplication1.Entities.User", null)
+                        .WithMany("Discounts")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("WebApplication1.Entities.Employee", b =>
@@ -328,8 +377,8 @@ namespace WebApplication1.Migrations
             modelBuilder.Entity("WebApplication1.Entities.Inventory", b =>
                 {
                     b.HasOne("WebApplication1.Entities.Product", "Product")
-                        .WithOne("Inventory")
-                        .HasForeignKey("WebApplication1.Entities.Inventory", "ProductId")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -356,7 +405,7 @@ namespace WebApplication1.Migrations
                         .IsRequired();
 
                     b.HasOne("WebApplication1.Entities.Product", "Product")
-                        .WithMany("orderDetails")
+                        .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -403,14 +452,14 @@ namespace WebApplication1.Migrations
 
             modelBuilder.Entity("WebApplication1.Entities.Product", b =>
                 {
-                    b.Navigation("Inventory")
+                    b.Navigation("Discount")
                         .IsRequired();
-
-                    b.Navigation("orderDetails");
                 });
 
             modelBuilder.Entity("WebApplication1.Entities.User", b =>
                 {
+                    b.Navigation("Discounts");
+
                     b.Navigation("EmployeeInfo")
                         .IsRequired();
 
