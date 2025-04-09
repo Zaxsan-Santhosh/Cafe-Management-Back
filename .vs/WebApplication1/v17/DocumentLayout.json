@@ -1,34 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\cafe-management-back\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\webapplication1\\webapplication1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\cafe-management-back\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\webapplication1\\webapplication1\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\cafe-management-back\\webapplication1\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\webapplication1\\webapplication1\\iservices\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\iservices\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\cafe-management-back\\webapplication1\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\webapplication1\\webapplication1\\irepos\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\irepos\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\cafe-management-back\\webapplication1\\irepos\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\irepos\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\webapplication1\\webapplication1\\repositories\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repositories\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\webapplication1\\webapplication1\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\my projects\\personal projects\\cafe_managment\\back\\cafe-management-back\\webapplication1\\repositories\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37891600-35D1-4185-8A62-7E5FB69CEDF7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repositories\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,106 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T06:25:50.948Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T16:25:06.59Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwCEAAAAAAAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAswDcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T18:09:39.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\IServices\\IProductService.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\IServices\\IProductService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\IServices\\IProductService.cs",
-              "RelativeToolTip": "WebApplication1\\IServices\\IProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T17:55:58.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IProductRepo.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\IRepos\\IProductRepo.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\IRepos\\IProductRepo.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\IRepos\\IProductRepo.cs",
-              "RelativeToolTip": "WebApplication1\\IRepos\\IProductRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T17:55:36.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductRepo.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Repositories\\ProductRepo.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Repositories\\ProductRepo.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Repositories\\ProductRepo.cs",
-              "RelativeToolTip": "WebApplication1\\Repositories\\ProductRepo.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwDMAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T17:47:20.83Z",
+              "WhenOpened": "2025-03-10T09:31:54.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Services\\ProductService.cs",
-              "RelativeToolTip": "WebApplication1\\Services\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAJAAAAAAAAAA==",
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\IServices\\IUserService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\IServices\\IUserService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\IServices\\IUserService.cs",
+              "RelativeToolTip": "WebApplication1\\IServices\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T17:49:02.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T09:31:51.419Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\WebApplication1\\WebApplication1\\Entities\\Product.cs",
-              "RelativeToolTip": "WebApplication1\\Entities\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\Services\\UserService.cs",
+              "RelativeToolTip": "WebApplication1\\Services\\UserService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T17:29:25.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T09:31:47.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\IRepos\\IUserRepo.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\IRepos\\IUserRepo.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\IRepos\\IUserRepo.cs",
+              "RelativeToolTip": "WebApplication1\\IRepos\\IUserRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T09:31:42.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\Repositories\\UserRepo.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repositories\\UserRepo.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\My Projects\\Personal Projects\\Cafe_Managment\\back\\Cafe-Management-Back\\WebApplication1\\Repositories\\UserRepo.cs",
+              "RelativeToolTip": "WebApplication1\\Repositories\\UserRepo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwCkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T09:31:34.052Z"
             }
           ]
         }

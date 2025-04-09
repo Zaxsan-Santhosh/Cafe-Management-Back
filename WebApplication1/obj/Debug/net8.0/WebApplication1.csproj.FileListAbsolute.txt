@@ -516,3 +516,11 @@ C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\WebAppli
 C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\Cafe-Management-Back\WebApplication1\obj\Debug\net8.0\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\Cafe-Management-Back\WebApplication1\obj\Debug\net8.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\Cafe-Management-Back\WebApplication1\obj\Debug\net8.0\WebApplication1.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\Cafe-Management-Back\WebApplication1\obj\Debug\net8.0\WebApplication1.AssemblyInfo.cs
+C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\Cafe-Management-Back\WebApplication1\obj\Debug\net8.0\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\Cafe-Management-Back\WebApplication1\obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\Cafe-Management-Back\WebApplication1\obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\My Projects\Personal Projects\Cafe_Managment\back\Cafe-Management-Back\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json

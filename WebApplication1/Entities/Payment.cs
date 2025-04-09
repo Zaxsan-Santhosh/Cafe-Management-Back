@@ -5,16 +5,16 @@ namespace WebApplication1.Entities
     public class Payment
     {
         public int Id { get; set; }
-        [ForeignKey("Order")]
-        public int OrderId { get; set; }
-        public PaymentMethod PaymentMethod { get; set; }
-        public decimal AmountPaid { get; set; }
-        public DateTime PaymentDate { get; set; } = DateTime.UtcNow;
 
-        public Order Order { get; set; }
+        public int OrderId { get; set; }
+        public Order Order { get; set; }  // One-to-One
+
+        public decimal Amount { get; set; }
+        public paymentMethod PaymentMethod { get; set; }
+        public DateTime PaymentDate { get; set; }
     }
 
-    public enum PaymentMethod
+    public enum paymentMethod
     {
         Cash,
         Card,

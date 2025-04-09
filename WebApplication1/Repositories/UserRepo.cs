@@ -15,45 +15,40 @@ namespace WebApplication1.Repositories
         }
 
 
-        public async Task<List<User>> GetAllUsersAsync()
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
-            return await _appDbContext.Users.AsNoTracking().ToListAsync();
+            return await _appDbContext.Users.ToListAsync();
         }
 
-        public async Task<User?> GetUserByIdAsync(int id)
+        public async Task<User> GetUserByIdAsync(int id)
         {
-            return await _appDbContext.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id);
+            return await _appDbContext.Users.FirstOrDefaultAsync(u => u.Id == id);
         }
 
-        public async Task<User> CreateUserAsync(User user)
+        public async Task CreateUserAsync(User user)
         {
-            if (user == null) throw new ArgumentNullException(nameof(user));
-
             await _appDbContext.Users.AddAsync(user);
             await _appDbContext.SaveChangesAsync();
-            return user;
         }
 
 
-        public async Task<bool> UpdateUserAsync(User user)
+        public async Task UpdateUserAsync(User user)
         {
-            var existingUser = await _appDbContext.Users.FindAsync(user.Id);
-            if (existingUser == null) return false;
-
-            _appDbContext.Entry(existingUser).CurrentValues.SetValues(user);
-            await _appDbContext.SaveChangesAsync();
-            return true;
+           _appDbContext.Users.Update(user);
+           await _appDbContext.SaveChangesAsync();
         }
 
 
-        public async Task<bool> DeleteUserAsync(int id)
+        public async Task DeleteUserAsync(int id)
         {
             var user = await _appDbContext.Users.FindAsync(id);
-            if (user == null) return false;
+            if (user != null)
+            {
+                _appDbContext.Users.Remove(user);
+                await _appDbContext.SaveChangesAsync();
+            }
 
-            _appDbContext.Users.Remove(user);
-            await _appDbContext.SaveChangesAsync();
-            return true;
+            
         }
 
 

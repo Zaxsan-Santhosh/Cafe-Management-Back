@@ -14,70 +14,32 @@ namespace WebApplication1.Services
             _userRepo = userRepo;
         }
 
-        public async Task<List<UserDTO>> GetAllUsersAsync()
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
-            var users = await _userRepo.GetAllUsersAsync();
-
-            // Convert List<User> to List<UserDTO>
-            return users.Select(u => new UserDTO
-            {
-                Id = u.Id,
-                FirstName = u.FirstName,
-                LastName = u.LastName,
-                Email = u.Email,
-                PhoneNumber = u.PhoneNumber,
-                Role = u.Role,
-                CreatedAt = u.CreatedAt,
-                Orders = u.Orders?.Select(o => new OrderDTO
-                {
-                    Id = o.Id,
-                    OrderDate = o.OrderDate,
-                    TotalAmount = o.TotalAmount,
-                    Status = (int)o.Status // Explicit conversion from OrderStatus to int
-                }).ToList()
-            }).ToList();
+            return await _userRepo.GetAllUsersAsync();
         }
 
 
-        public async Task<UserDTO> GetUserByIdAsync(int id)
+        public async Task<User> GetUserByIdAsync(int id)
         {
-            var user = await _userRepo.GetUserByIdAsync(id);
-            if (user == null) return null;
-
-            return new UserDTO
-            {
-                Id = user.Id,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Email = user.Email,
-                PhoneNumber = user.PhoneNumber,
-                Role = user.Role,
-                CreatedAt = user.CreatedAt,
-                Orders = user.Orders?.Select(o => new OrderDTO
-                {
-                    Id = o.Id,
-                    OrderDate = o.OrderDate,
-                    TotalAmount = o.TotalAmount,
-                    Status = (int)o.Status // Explicit conversion from OrderStatus to int
-                }).ToList()
-            };
+            return await _userRepo.GetUserByIdAsync(id);
         }
 
 
-        public async Task<User> CreateUserAsync(User user)
+        public async Task AddUser(User user)
         {
-            return await _userRepo.CreateUserAsync(user);
+            await _userRepo.CreateUserAsync(user);
         }
 
 
-        public async Task<bool> UpdateUserAsync(User user)
+        public async Task UpdateUserAsync(User user)
         {
-            return await _userRepo.UpdateUserAsync(user);
+            await _userRepo.UpdateUserAsync(user);
         }
 
-        public async Task<bool> DeleteUserAsync(int id)
+        public async Task DeleteUserAsync(int id)
         {
-            return await _userRepo.DeleteUserAsync(id);
+            await _userRepo.DeleteUserAsync(id);
         }
 
     }

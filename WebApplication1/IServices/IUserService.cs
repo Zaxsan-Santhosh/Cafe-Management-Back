@@ -5,10 +5,10 @@ namespace WebApplication1.IServices
 {
     public interface IUserService
     {
-        Task<List<UserDTO>> GetAllUsersAsync();
-        Task<UserDTO> GetUserByIdAsync(int id);
-        Task<User> CreateUserAsync(User user);
-        Task<bool> UpdateUserAsync(User user);
-        Task<bool> DeleteUserAsync(int id);
+        Task<IEnumerable<User>> GetAllUsersAsync();
+        Task<User> GetUserByIdAsync(int id);
+        Task AddUser(User user);
+        Task UpdateUserAsync(User user);
+        Task DeleteUserAsync(int id);
     }
 }

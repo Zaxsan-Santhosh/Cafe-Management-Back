@@ -27,40 +27,34 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserDTO>> GetUserById(int id)
+        public async Task<IActionResult> GetUserByIdAsync(int id)
         {
             var user = await _userService.GetUserByIdAsync(id);
-            if (user == null)
-            {
-                return NotFound("User Not found");
-            }
-
+            if (user == null) return NotFound();
             return Ok(user);
         }
 
         [HttpPost]
-        public async Task<ActionResult<User>> CreateUser([FromBody] User user)
+        public async Task<IActionResult> AddUser([FromBody] User user)
         {
-            if (user == null) return BadRequest("Invalid user data");
-
-            var newUser = await _userService.CreateUserAsync(user);
-            return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            await _userService.AddUser(user);
+            return CreatedAtAction(nameof(GetUserByIdAsync), new { id = user.Id }, user);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateUser(int id, [FromBody] User user)
+        public async Task<IActionResult> UpdateUserAsync(int id, [FromBody] User user)
         {
-            if (user == null || id != user.Id) return BadRequest("Invalid user data");
-
-            var updated = await _userService.UpdateUserAsync(user);
-            return updated ? NoContent() : NotFound("User Not Found");
+            if (id != user.Id) return BadRequest();
+            await _userService.UpdateUserAsync(user);
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteUser(int id)
+        public async Task<ActionResult> DeleteUserAsync(int id)
         {
-            var deleted = await _userService.DeleteUserAsync(id);
-            return deleted ? NoContent() : NotFound("User not found");
+            await _userService.DeleteUserAsync(id);
+            return NoContent(); 
         }
     }
 }
